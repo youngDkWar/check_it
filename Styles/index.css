@@ -36,6 +36,7 @@ body{
 	background: #b2b2b2;
 	color: #ca121a;
 }
+
 #Шапка{
 	display: inline-block;
 	width: 100%;
@@ -48,15 +49,46 @@ body{
 }
 .record{
 	display: inline-block;
-	width: 400px;
-	height: 200px;
+	width: 450px;
+	height: 250px;
 	border: 2px solid black;
 	border-radius: 50px;
 	margin-right: 50px;
-	background: linear-gradient(90deg, rgba(148,23,23,1) 22%, rgba(182,15,15,1) 23%, rgba(202,18,26,1) 24%);
+	text-align: left;
+	background: linear-gradient(90deg,
+	rgba(148,23,23,1) 22%,
+	rgba(182,15,15,1) 23%,
+	rgba(202,18,26,1) 24%);
 }
 .noEvents{
 	font-size: xx-large;
 	color: rgb(52, 54, 58);
 	text-align: center;
+}
+.time{
+	font-size: 50px;
+	color: aliceblue;
+	display: inline-block;
+	transform: rotate(270deg);
+	position: relative;
+	right: 10px;
+	top: 90px;
+}
+.heading, .description, .date{
+	display: inline-block;
+	position: relative;
+	color: aliceblue;
+	font-size: 33px;
+	bottom: 20px;
+	margin-bottom: 12px;
+}
+.description{
+	font-size: 21px;
+	width: 330px;
+	height: 147px;
+	color: black;
+	left: 110px;
+}
+.date{
+	left: 110px;
 }

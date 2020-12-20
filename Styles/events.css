@@ -2,10 +2,9 @@
 .reg{
     position: relative;
     left: 38%;
-    top: 100px;
+    margin-top: 50px;
     background: rgb(52, 54, 58);
     text-align: center;
-    height: 500px;
     border-radius: 50px;
     width: 444px;
 }
@@ -38,20 +37,42 @@
     color: rgb(201, 28, 28);
     background: #b2b2b2;
 }
+.information{
+    position: relative;
+    left: 63%;
+    bottom: 450px;
+}
 .help{
     position: relative;
-    display: inline-block;
     border: 2px solid burlywood;
     border-radius: 30px;
     background: rgb(52, 54, 58);
     width: 250px;
-    height: 155px;
-    left: 44%;
-    top: 140px;
+    margin-top: 40px;
     text-align: center;
 }
 .example{
     color: aliceblue;
     margin-top: 10px;
     font-size: large;
+}
+#main{
+    position: relative;
+    width: 100px;
+    background: aliceblue;
+    text-align: center;
+    font-size: x-large;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+#main:hover{
+    background: #b2b2b2;
+    color: #ca121a;
+}
+.message{
+    color: red;
+    position: absolute;
+    
 }

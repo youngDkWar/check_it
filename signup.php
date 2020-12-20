@@ -46,9 +46,9 @@ if(isset($data['do_signup'])) {
         $errors[] = "Пользователь с таким Email существует!";
     }
     if (empty($errors)){
-        $query = "INSERT INTO `users` (`id`, `name`, `surname`, `email`, `password`)
-                  VALUES (NULL, ".$q.$data['name'].$q.", ".$q.$data['surname'].$q.", "
-            .$q.$data['email'].$q.", ".$q.$data['password'].$q.")";
+        $query = "INSERT INTO `users` VALUES 
+                           (NULL, ".$q.$data['name'].$q.", ".$q.$data['surname'].$q.", "
+                            .$q.$data['email'].$q.", ".$q.$data['password'].$q.", ".'0'.")";
         $connection->exec($query);
     }
     else
