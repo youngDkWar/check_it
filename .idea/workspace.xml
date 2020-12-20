@@ -2,71 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c41ae553-b9a1-4c00-982f-79271d9c5d74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Styles/edit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form_checker.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/full_form_with_discription.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/id_form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/record_form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enter_Images/Autologin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enter_Images/Avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enter_Images/Login form.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enter_Images/Login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enter_Images/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enter_Images/Welcome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enter_Images/Общий вид.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Events.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/FIO_Place.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/P.V.  IVANOV.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/back_main.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/change pswrd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/font.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/icon/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/icon/help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/icon/log off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/icon/password.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/mainInfo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Ава.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Аватарка.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Всплывающее окно страницы ввода кода/Документация.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Всплывающее окно страницы ввода кода/Затемнение фона.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Всплывающее окно страницы ввода кода/Кнопка отправки кода.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Всплывающее окно страницы ввода кода/Общий план.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Всплывающее окно страницы ввода кода/Само окно ввода кода.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Всплывающее окно страницы ввода кода/Строка ввода кода.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Всплывающее окно страницы ввода кода/Текст сверху, на всякий случай.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Выйти.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Личные данные.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Общий вид.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Помощь.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Страница авторизации/Аватарка.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Страница авторизации/Документация.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Страница авторизации/Кнопка Login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Страница авторизации/Лого проекта.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Страница авторизации/Общий вид.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Страница авторизации/Прямоугольник авторизации.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Страница авторизации/Страница авторизации.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Страница авторизации/Текст Login form.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Страница авторизации/Текст Welcome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Фон под основную информацию.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Шапка страницы.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Шапка.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Шрифт.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Profile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/events.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check_it.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event.php" beforeDir="false" afterPath="$PROJECT_DIR$/event.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/head.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +45,7 @@
       <workItem from="1608306608355" duration="664000" />
       <workItem from="1608362503331" duration="23391000" />
       <workItem from="1608449315377" duration="27462000" />
-      <workItem from="1608481515122" duration="10097000" />
+      <workItem from="1608481515122" duration="12962000" />
     </task>
     <servers />
   </component>

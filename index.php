@@ -10,8 +10,9 @@ if (!empty($_SESSION['logged_user'])) {
           <a href='event.php' style='text-decoration: none; color: #AA4012'>здесь</a></div>";
     }
     $res = [];
-    $statement = $connection->query
-    ("SELECT * FROM `records` WHERE user_id =" . $_SESSION['logged_user']['id']);
+    $statement = $connection->query(
+        "SELECT * FROM `records` WHERE user_id =" . $_SESSION['logged_user']['id']." ORDER BY `date`, `time`");
+
     while ($r = $statement->fetch(PDO::FETCH_OBJ)) {
         array_push($res, ['name' => $r->name, 'description' => $r->description,
             'date' => $r->date, 'time' => $r->time, 'id' => $r->id]);

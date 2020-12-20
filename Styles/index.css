@@ -54,10 +54,7 @@ body{
 	border-radius: 50px;
 	margin-right: 50px;
 	text-align: left;
-	background: linear-gradient(90deg,
-	rgba(148,23,23,1) 22%,
-	rgba(182,15,15,1) 23%,
-	rgba(202,18,26,1) 24%);
+	background: linear-gradient(0deg, rgba(55,49,49,1) 17%, rgba(253,29,29,1) 22%, rgba(42,7,7,1) 86%);
 }
 .noEvents{
 	font-size: xx-large;
@@ -81,24 +78,27 @@ body{
 	bottom: 20px;
 	margin-bottom: 12px;
 }
+.heading{
+	color: #e7ae29;
+}
 .description{
 	font-size: 21px;
 	width: 330px;
 	height: 147px;
-	color: black;
+	color: #e2d1be;
 	left: 110px;
 }
 .date{
-	left: 110px;
+	margin-left: 140px;
 }
 .edit{
 	position: relative;
 	top: 30px;
 }
 .id{
-	right: 130px;
-	bottom: 30px;
-	color: rgb(52, 54, 57);
+	right: 255px;
+	bottom: 20px;
+	color: red;
 }
 .add{
 	display: block;

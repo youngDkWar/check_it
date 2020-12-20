@@ -45,6 +45,7 @@ if(isset($data['do_signup'])) {
                            (NULL, ".$q.$data['name'].$q.", ".$q.$data['surname'].$q.", "
                             .$q.$data['email'].$q.", ".$q.$data['password'].$q.", ".'0'.")";
         $connection->exec($query);
+        echo "<div style='color: green; position: absolute; left: 44%; font-size: xxx-large'>Успешно!</div>";
     }
     else
         echo '<div class="message">' . array_shift($errors). '</div>';
