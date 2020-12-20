@@ -1,14 +1,6 @@
-<?php require "configs/connection.php";?>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Registration</title>
-    <link rel="stylesheet" href="Styles/login.css">
-    <link rel="stylesheet" href="Styles/signup.css">
-</head>
-
 <?php
+require "configs/connection.php";
+require "templates/head.php";
 $data = $_POST;
 if(isset($data['do_signup'])) {
     $errors = [];
@@ -28,13 +20,16 @@ if(isset($data['do_signup'])) {
     if ($data['password_2'] != $data['password']) {
         $errors[] = "Повторный пароль введен не верно!";
     }
-    if (mb_strlen($data['name']) < 2 || mb_strlen($data['name']) > 254) {
-        $errors[] = "Недопустимая длина имени";
+    if (mb_strlen($data['name']) < 2 || mb_strlen($data['name']) > 254
+        || !preg_match("/^[a-zA-Zа-яА-Я_]{1,}/", $data['name'])) {
+        $errors[] = "Недопустимое имя!";
     }
-    if (mb_strlen($data['surname']) < 2 || mb_strlen($data['family']) > 254) {
-        $errors[] = "Недопустимая длина фамилии";
+    if (mb_strlen($data['surname']) < 2 || mb_strlen($data['surname']) > 254
+        || !preg_match("/^[a-zA-Zа-яА-Я_]{1,}/", $data['surname'])){
+        $errors[] = "Недопустимая фамилия";
     }
-    if (mb_strlen($data['password']) < 5 || mb_strlen($data['password']) > 20) {
+    if (mb_strlen($data['password']) < 5 || mb_strlen($data['password']) > 20
+        || !preg_match("/^[a-zA-Z0-9а-яА-Я_]{1,}/", $data['password'])){
         $errors[] = "Недопустимая длина пароля (от 5 до 20 символов)";
     }
     if (!preg_match("/[0-9a-z_]+@[0-9a-z_^\.]+\.[a-z]{2,3}/i", $data['email'])) {
@@ -52,16 +47,15 @@ if(isset($data['do_signup'])) {
         $connection->exec($query);
     }
     else
-        echo '<div style="color: red; ">' . array_shift($errors). '</div><hr>';
+        echo '<div class="message">' . array_shift($errors). '</div>';
 }
 ?>
-
-<body>
-<div class="reg">
+<img class="logo" src="Enter_images/Logo.png" alt="Логотип сайта Check It">
+<div class="regis">
     <h2 style="color: aliceblue">Форма регистрации</h2>
     <form action="signup.php" method="post">
         <input type="email" class="form-control" name="email" id="email" placeholder="Введите Email"><br>
-        <input type="text" class="form-control" name="name" id="name" placeholder="Введите имя" required><br>
+        <input type="text" class="form-control" name="name" id="user_name" placeholder="Введите имя" required><br>
         <input type="text" class="form-control" name="surname" id="family" placeholder="Введите фамилию" required><br>
         <input type="password" class="form-control" name="password" id="password" placeholder="Введите пароль"><br>
         <input type="password" class="form-control" name="password_2" id="password_2" placeholder="Повторите пароль"><br>

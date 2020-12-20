@@ -3,7 +3,6 @@ body{
 	background-color: #b2b2b2;
 	margin: 0;
 }
-
 #avatar{
 	position: absolute;
 	left: 88%;
@@ -74,7 +73,7 @@ body{
 	right: 10px;
 	top: 90px;
 }
-.heading, .description, .date{
+.heading, .description, .date, .id{
 	display: inline-block;
 	position: relative;
 	color: aliceblue;
@@ -91,4 +90,32 @@ body{
 }
 .date{
 	left: 110px;
+}
+.edit{
+	position: relative;
+	top: 30px;
+}
+.id{
+	right: 130px;
+	bottom: 30px;
+	color: rgb(52, 54, 57);
+}
+.add{
+	display: block;
+	position: relative;
+	width: 130px;
+	font-size: 30px;
+	margin-top: 20px;
+	border: 2px solid black;
+	border-radius: 10px;
+	transition: 0.3s;
+	text-align: center;
+	background: aliceblue;
+	text-decoration: none;
+	color: #ca121a;
+	left: 45%;
+}
+.add:hover{
+	background: #ca121a;
+	color: aliceblue;
 }

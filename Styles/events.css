@@ -2,7 +2,7 @@
 .reg{
     position: relative;
     left: 38%;
-    margin-top: 50px;
+    margin-top: 20px;
     background: rgb(52, 54, 58);
     text-align: center;
     border-radius: 50px;
@@ -73,6 +73,7 @@
 }
 .message{
     color: red;
+    top: 180px;
+    font-size: xx-large;
     position: absolute;
-    
 }
