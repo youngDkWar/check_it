@@ -1,0 +1,62 @@
+
+body{
+	background-color: #b2b2b2;
+	margin: 0;
+}
+
+#avatar{
+	position: absolute;
+	left: 88%;
+	top: 5px;
+	width: 76px;
+}
+#name, #surname, #logout{
+	position: absolute;
+	left: 78%;
+	color: aliceblue;
+	font-size: 40px;
+	top: 0;
+}
+#surname{
+	top: 36px;
+}
+#logout{
+	left: 93%;
+	width: 110px;
+	height: 30px;
+	text-align: center;
+	top:23px;
+	font-size: x-large;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: 0.3s;
+	text-decoration: none;
+}
+#logout:hover{
+	background: #b2b2b2;
+	color: #ca121a;
+}
+#Шапка{
+	display: inline-block;
+	width: 100%;
+	height: 90px;
+}
+.container{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 180px;
+}
+.record{
+	display: inline-block;
+	width: 400px;
+	height: 200px;
+	border: 2px solid black;
+	border-radius: 50px;
+	margin-right: 50px;
+	background: linear-gradient(90deg, rgba(148,23,23,1) 22%, rgba(182,15,15,1) 23%, rgba(202,18,26,1) 24%);
+}
+.noEvents{
+	font-size: xx-large;
+	color: rgb(52, 54, 58);
+	text-align: center;
+}

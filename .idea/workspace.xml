@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c41ae553-b9a1-4c00-982f-79271d9c5d74" name="Default Changelist" comment="" />
+    <list default="true" id="c41ae553-b9a1-4c00-982f-79271d9c5d74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Styles/signup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/events.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/head.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +21,11 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lp8xjCZoZSpa7QXgdgJ8I97waB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,10 +47,24 @@
       <workItem from="1608282923374" duration="3551000" />
       <workItem from="1608287688953" duration="15547000" />
       <workItem from="1608306608355" duration="664000" />
+      <workItem from="1608362503331" duration="23391000" />
+      <workItem from="1608449315377" duration="5315000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

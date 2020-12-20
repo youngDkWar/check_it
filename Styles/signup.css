@@ -5,7 +5,7 @@
     top: 100px;
     background: rgb(52, 54, 58);
     text-align: center;
-    height: 500px;
+    height: 600px;
     border-radius: 50px;
     width: 444px;
 }
@@ -14,16 +14,9 @@
     top: 90px;
     background-color: aliceblue;
     font-size: x-large;
-    margin: 30px 0 19px 0;
-    border-radius: 10px;
+    margin: 15px 0 19px 0;
 }
 
-.area{
-    margin-left: 9px;
-    height: 80px;
-    width: 400px;
-    background: aliceblue;
-}
 .btn{
     width: 190px;
     height: 50px;
@@ -37,21 +30,4 @@
 .btn:hover{
     color: rgb(201, 28, 28);
     background: #b2b2b2;
-}
-.help{
-    position: relative;
-    display: inline-block;
-    border: 2px solid burlywood;
-    border-radius: 30px;
-    background: rgb(52, 54, 58);
-    width: 250px;
-    height: 155px;
-    left: 44%;
-    top: 140px;
-    text-align: center;
-}
-.example{
-    color: aliceblue;
-    margin-top: 10px;
-    font-size: large;
 }

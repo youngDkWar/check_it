@@ -4,12 +4,12 @@ $data = $_POST;
 if(isset($data['do_login'])) {
     $errors = array();
     $q = "'";
-
-    if ($connection->query("SELECT * FROM `users` WHERE email =".$q.$data['email'].$q)){
-        echo "SELECT * FROM `users` WHERE email =".$q.$data['email'].$q;
-        if($connection->query("SELECT * FROM `users` WHERE password =".$q.$data['password'].$q)) {
-            $_SESSION['logged_user'] = $data['email'];
-            #header('Location: index.php');
+    $statement = $connection->query("SELECT * FROM `users` WHERE email =".$q.$data['email'].$q);
+    $t = $statement->fetch(PDO::FETCH_ASSOC);
+    if (!empty($t)){
+        if($t['password'] == $data['password']) {
+            $_SESSION['logged_user'] = $t;
+            header('Location: index.php');
         } else {
             $errors[] = 'Пароль неверно введен!';
         }

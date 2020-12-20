@@ -3,12 +3,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Check It!</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="Styles/login.css">
+    <link rel="stylesheet" href="Styles/signup.css">
 </head>
 
 <?php
-$title = "Registration";
 $data = $_POST;
 if(isset($data['do_signup'])) {
     $errors = [];
@@ -40,13 +40,15 @@ if(isset($data['do_signup'])) {
     if (!preg_match("/[0-9a-z_]+@[0-9a-z_^\.]+\.[a-z]{2,3}/i", $data['email'])) {
         $errors[] = 'Неверно введен е-mail';
     }
-    if ($connection->query("SELECT * FROM `users` WHERE email =".$q.$data['email'].$q)) {
+    $statement = $connection->query("SELECT * FROM `users` WHERE email =".$q.$data['email'].$q);
+    $t = $statement->fetch(PDO::FETCH_ASSOC);
+    if (!empty($t)) {
         $errors[] = "Пользователь с таким Email существует!";
     }
     if (empty($errors)){
         $query = "INSERT INTO `users` (`id`, `name`, `surname`, `email`, `password`)
                   VALUES (NULL, ".$q.$data['name'].$q.", ".$q.$data['surname'].$q.", "
-            .$q.$data['email'].$q.", ".$q.password_hash($data['password'], PASSWORD_DEFAULT).$q.")";
+            .$q.$data['email'].$q.", ".$q.$data['password'].$q.")";
         $connection->exec($query);
     }
     else
@@ -54,25 +56,19 @@ if(isset($data['do_signup'])) {
 }
 ?>
 
-
 <body>
-<div class="container mt-4">
-    <div class="row">
-        <div class="col">
-            <!-- Форма регистрации -->
-            <h2>Форма регистрации</h2>
-            <form action="signup.php" method="post">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Введите Email"><br>
-                <input type="text" class="form-control" name="name" id="name" placeholder="Введите имя" required><br>
-                <input type="text" class="form-control" name="surname" id="family" placeholder="Введите фамилию" required><br>
-                <input type="password" class="form-control" name="password" id="password" placeholder="Введите пароль"><br>
-                <input type="password" class="form-control" name="password_2" id="password_2" placeholder="Повторите пароль"><br>
-                <button class="btn btn-success" name="do_signup" type="submit">Зарегистрировать</button>
-            </form>
-            <br>
-            <p>Если вы зарегистрированы, тогда нажмите <a href="login.php">здесь</a>.</p>
-            <p>Вернуться на <a href="index.php">главную</a>.</p>
-        </div>
-    </div>
+<div class="reg">
+    <h2 style="color: aliceblue">Форма регистрации</h2>
+    <form action="signup.php" method="post">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Введите Email"><br>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Введите имя" required><br>
+        <input type="text" class="form-control" name="surname" id="family" placeholder="Введите фамилию" required><br>
+        <input type="password" class="form-control" name="password" id="password" placeholder="Введите пароль"><br>
+        <input type="password" class="form-control" name="password_2" id="password_2" placeholder="Повторите пароль"><br>
+        <button class="btn" name="do_signup" type="submit">REGISTRATION</button>
+    </form>
+    <br>
+    <p style="color: aliceblue">Если вы зарегистрированы, тогда нажмите
+        <a style="color: #AA4012; text-decoration: none" href="login.php">здесь</a>.</p>
 </div>
-</body>
+<?PHP require 'templates/footer.php';?>
